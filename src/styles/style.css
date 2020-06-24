@@ -100,6 +100,11 @@ svg {
 	position: relative;
 }
 
+.hero figure {
+	max-height: 100%;
+	height: 450px;
+}
+
 .hero figure img {
 	width: 100%;
 	height: 450px;
@@ -139,6 +144,10 @@ svg {
 }
 
 @media (min-width: 768px) {
+	.hero figure {
+		height: 750px;
+	}
+
 	.hero figure img {
 		height: 750px;
 	}
@@ -273,6 +282,11 @@ svg {
 
 
 /* フォト */
+;.photo figure {
+	max-height: 100%;
+	height: 170px;
+}
+
 .photo img {
 	width: 100%;
 	height: 170px;
@@ -280,6 +294,9 @@ svg {
 }
 
 @media (min-width: 768px) {
+	.photo figure {
+		height: 367px;
+	}
 	.photo img {
 		height: 367px;
 	}
@@ -291,15 +308,18 @@ svg {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	color: #fff;
-    background-image: url(/images/pattern.jpg);
+    background-image: none;
     background-size: cover;
-    background-color: #477294;
+	background-color: #477294;
+	position: relative;
 }
 
 .footer .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+	z-index: 10;
 }
 
 .footer .site {
@@ -309,6 +329,15 @@ svg {
 	margin-top: 20px;
 	margin-bottom: 50px;
 	font-size: 14px;
+}
+
+.footer .back {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 @media (min-width: 768px) {
